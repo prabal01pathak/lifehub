@@ -14,14 +14,27 @@ and internal discipline apply from day one.
 This project uses Nx for modular monorepo management. The layout looks like:
 
 ```
-apps/ api/ → Express backend web/ → React frontend desktop/ → Electron wrapper
-(optional) mobile/ → Flutter/React Native (planned)
-
-libs/ auth/ → Shared auth logic ai/ → RAG/AI modules journal/ → Journal/mood
-tracking task/ → Task logic types/ → Shared types/interfaces
+lifehub/
+├── apps/                        # Application entry points
+│   ├── api/                     # Express backend (REST API)
+│   ├── web/                     # React frontend (user dashboard)
+│   ├── desktop/                 # Electron app (wrapper for web, optional)
+│   └── mobile/                  # Flutter or React Native app (planned)
+│
+├── libs/                        # Shared and reusable libraries
+│   ├── auth/                    # Authentication logic and guards
+│   ├── ai/                      # AI/ML modules (e.g. RAG pipeline, summarization)
+│   ├── journal/                 # Journal and mood tracking logic
+│   ├── task/                    # Task, habit, and productivity logic
+│   └── types/                   # Shared TypeScript interfaces and DTOs
+│
+├── apps/docs/                   # Docusaurus-powered documentation site
+├── tools/                       # Custom CLI tools or dev scripts (optional)
+├── nx.json                      # Nx configuration
+├── tsconfig.json                # Root TypeScript config
+├── package.json                 # Project dependencies and scripts
+└── ...
 ```
-
----
 
 ## 🧑‍💻 Development Setup
 
