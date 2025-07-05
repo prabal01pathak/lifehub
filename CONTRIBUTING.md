@@ -1,6 +1,3 @@
-### ✅ `CONTRIBUTING.md` (Markdown format)
-
-```markdown
 # 🤝 Contributing to LifeHub
 
 Welcome, and thank you for considering contributing to **LifeHub**!
