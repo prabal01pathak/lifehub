@@ -1,105 +1,137 @@
-# Lifehub
+# 🌟 LifeHub – Your Digital Life Operating System
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+**LifeHub** is an open-source, all-in-one digital life management platform that
+brings together productivity, wellness, learning, personal finance, journaling,
+and AI-powered insights — all in one unified experience.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+Designed to work across web, mobile, and desktop, LifeHub aims to help users not
+just **plan their life**, but actually **optimize it**.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-or run `npx nx graph` to visually explore what was created. Now, let's get you
-up to speed!
+---
 
-## Finish your CI setup
+## ✨ Vision
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/oeCSnHrId3)
+> To empower people to take control of their digital life with privacy-first
+> tools, intelligent insights, and seamless cross-platform experiences — with AI
+> that understands _you_.
 
-## Generate a library
+---
 
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
-```
+## 🌍 Why LifeHub?
 
-## Run tasks
+In today’s fast-moving world, our lives are fragmented across apps, tools, and
+tabs. LifeHub unifies all critical aspects of personal growth and well-being
+into a single intelligent assistant that:
 
-To build the library use:
+- Helps you **plan, track, and achieve** your goals.
+- Understands your habits and offers **personalized suggestions**.
+- Promotes **digital well-being** and reduces app overload.
+- Works **offline, on any device**, and respects your **privacy**.
 
-```sh
-npx nx build pkg1
-```
+---
 
-To run any task with Nx use:
+## 🧠 Core Modules
 
-```sh
-npx nx <target> <project-name>
-```
+### ✅ Life Productivity
 
-These targets are either
-[inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-or defined in the `project.json` or `package.json` files.
+- Tasks & Goals with smart prioritization
+- Daily planning + AI-powered assistant
+- Calendar integration & reminders
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 💬 Life Journal
 
-## Versioning and releasing
+- Mood & habit tracking
+- Daily reflections & prompts
+- Voice/emoji input + journaling streaks
 
-To version and release the library use
+### 💸 Life Finances _(Optional Future Module)_
 
-```
-npx nx release
-```
+- Track expenses, budgets, and savings goals
+- Monthly analytics
+- Smart suggestions to optimize spending
 
-Pass `--dry-run` to see what would happen without actually releasing the
-library.
+### 🧘 Life Wellness
 
-[Learn more about Nx release &raquo;](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- Habit builder with streaks and nudges
+- Mental health mood analytics
+- Sleep, water, and fitness tracking
 
-## Keep TypeScript project references up to date
+### 📚 Life Learning
 
-Nx automatically updates TypeScript
-[project references](https://www.typescriptlang.org/docs/handbook/project-references.html)
-in `tsconfig.json` files to ensure they remain accurate based on your project
-dependencies (`import` or `require` statements). This sync is automatically done
-when running tasks such as `build` or `typecheck`, which require updated
-references to function correctly.
+- Create your own learning plans
+- Track progress with spaced repetition
+- AI quiz generation and concept summarization
 
-To manually trigger the process to sync the project graph dependencies
-information to the TypeScript project references, run the following command:
+### 🤖 AI Assistant
 
-```sh
-npx nx sync
-```
+- “What should I do today?” planner
+- AI journaling insights (patterns, emotions)
+- Goal breakdown & smart suggestions
 
-You can enforce that the TypeScript project references are always in the correct
-state when running in CI by adding a step to your CI job configuration that runs
-the following command:
+---
 
-```sh
-npx nx sync:check
-```
+## 📅 Roadmap & Progress
 
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
+> This is a personal + public roadmap. Features will evolve as the project
+> grows.
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### Phase 1 – MVP (Core Features)
 
-## Install Nx Console
+- [x] Project Initialization & Planning
+- [ ] User Authentication (email + social login)
+- [ ] Task Management System (CRUD, priority, tags)
+- [ ] Mood & Journal Entry System
+- [ ] Basic AI Assistant (RAG or OpenAI)
+- [ ] Mobile App with basic sync
+- [ ] Deploy to cloud
+- [ ] Landing Page + Logo
+- [ ] Basic CI/CD
 
-Nx Console is an editor extension that enriches your developer experience. It
-lets you run tasks, generate code, and improves code autocompletion in your IDE.
-It is available for VSCode and IntelliJ.
+### Phase 2 – Power Features
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [ ] Goal Planning & Habit Builder
+- [ ] AI Daily Planner & Nudges
+- [ ] Journal Analytics with Charts
+- [ ] Notifications & Reminders
+- [ ] Desktop App (Electron)
+- [ ] Role-based Access & Collaboration
+- [ ] Cloud Sync + Offline Mode
 
-## Useful links
+### Phase 3 – Advanced
 
-Learn more:
+- [ ] Finance Tracker with Insights
+- [ ] Learning Tracker + Quizzes
+- [ ] Smart Health Analytics
+- [ ] Self-hosting Installer Script
+- [ ] Encrypted Local Data Storage
+- [ ] Marketing Dashboard & Analytics
+- [ ] Public Template Store
 
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-And join the Nx community:
+## 🛠️ How to Contribute
 
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or
-  [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+[Contributing Guide](CONTRIBUTING.md)
+
+---
+
+## 📢 Stay Updated
+
+As this project grows, I’ll be documenting the journey with:
+
+- Progress posts on LinkedIn
+- Weekly demos or dev logs
+- Open-source releases
+
+---
+
+## 🙌 Credits
+
+This is a passion + portfolio project by **Prabal Pathak** to explore end-to-end
+software engineering — from idea to production, powered by AI, cloud, testing,
+DevOps, and user empathy.
+
+---
+
+> ⭐ _Star this repo to follow along the journey. Let’s build something
+> meaningful together!_
