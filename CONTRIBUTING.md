@@ -12,15 +12,15 @@ and internal discipline apply from day one.
 ## 📦 Monorepo Structure
 
 This project uses Nx for modular monorepo management. The layout looks like:
-```
 
+```
 apps/ api/ → Express backend web/ → React frontend desktop/ → Electron wrapper
 (optional) mobile/ → Flutter/React Native (planned)
 
 libs/ auth/ → Shared auth logic ai/ → RAG/AI modules journal/ → Journal/mood
 tracking task/ → Task logic types/ → Shared types/interfaces
+```
 
-````
 ---
 
 ## 🧑‍💻 Development Setup
@@ -28,10 +28,10 @@ tracking task/ → Task logic types/ → Shared types/interfaces
 Clone and install:
 
 ```bash
-git clone https://github.com/<your-username>/lifehub.git
+git clone https://github.com/prabal01pathak/lifehub.git
 cd lifehub
 pnpm install     # or npm install
-````
+```
 
 To serve apps locally:
 
