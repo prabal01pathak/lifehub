@@ -44,3 +44,66 @@ Thumbs.db
 .github/instructions/nx.instructions.md
 
 test-output
+apps/api-java/.gradle
+
+
+
+### Java ###
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+*.iml
+
+### Gradle ###
+.gradle/
+build/
+!gradle-wrapper.jar
+!**/build.gradle
+!**/build.gradle.kts
+!**/settings.gradle
+!**/settings.gradle.kts
+
+### Maven (in case any submodule uses it) ###
+target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.ipr
+*.iml
+out/
+
+### VS Code ###
+.vscode/
+
+### Logs ###
+logs/
+*.log
+*.out
+*.pid
+
+### OS generated ###
+.DS_Store
+Thumbs.db
+
+### Test reports ###
+test-output/
+surefire-reports/
+jacoco.exec
+
+### Local env files ###
+.env
+.env.*
+
+### Application config ###
+application-local.yml
+application-local.properties
+
+### Nx Specific ###
+dist/
+tmp/
+nx-cache/
+node_modules/
