@@ -1,0 +1,6 @@
+{
+  "name": "common-lib",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api-java/common-lib/src",
+  "tags": []
+}
