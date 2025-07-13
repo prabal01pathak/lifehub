@@ -22,7 +22,7 @@ public class AuthService {
         UserEntity user = UserEntity.builder()
                 .fullName(request.getFullName())
                 .email(request.getEmail())
-                .password(request.getPassword()) // You can add encryption here
+                .password(request.getPassword())
                 .role(Role.USER)
                 .build();
 
