@@ -1,7 +1,11 @@
 package com.lifehub.common.dto;
 
 import com.lifehub.common.enums.Role;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
 @Setter
