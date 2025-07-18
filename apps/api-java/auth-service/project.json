@@ -2,5 +2,31 @@
   "name": "auth-service",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/api-java/auth-service/src",
-  "tags": []
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "apps/api-java/auth-service",
+        "args": ""
+      }
+    },
+    "build": {
+      "executor": "@nxrocks/nx-spring-boot:build",
+      "options": {
+        "root": "apps/api-java/auth-service",
+        "args": ""
+      }
+    },
+    "docker-build": {
+        "command": "docker build -f apps/api-java/auth-service/Dockerfile -t lifehub.azurecr.io/auth-service:latest ."
+    },
+    "docker-push": {
+      "executor": "@nx-tools/docker:push",
+      "options": {
+        "tag": "lifehub.azurecr.io/auth-service:latest"
+      }
+    }
+  }
 }

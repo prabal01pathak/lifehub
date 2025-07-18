@@ -1,5 +1,7 @@
-
-// For more information about Spring boot multi-modules projects, go to: https://spring.io/guides/gs/multi-module/
 rootProject.name = "api-java"
 
 include("user-service", "auth-service", "common-lib")
+
+project(":user-service").projectDir = file("user-service")
+project(":auth-service").projectDir = file("auth-service")
+project(":common-lib").projectDir = file("common-lib")

@@ -1,0 +1,32 @@
+# Ignore common directories
+node_modules
+dist
+build
+tmp
+out
+.gradle
+**/__pycache__/
+**/.DS_Store
+**/*.iml
+
+# IDEs
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Nx cache
+nx.json
+.project.json
+.cache
+coverage

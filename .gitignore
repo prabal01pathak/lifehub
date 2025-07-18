@@ -107,3 +107,4 @@ dist/
 tmp/
 nx-cache/
 node_modules/
+apps/infrastructure/terraform/src/defaultplan
